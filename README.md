@@ -1,4 +1,4 @@
-license
+
 🏥 Hospital Management Dashboard
 Healthcare Operations Intelligence Dashboard with Decision Analytics
 Group 2 · Batch 2 · Team A
@@ -6,9 +6,6 @@ Group 2 · Batch 2 · Team A
 The Hospital Management Dashboard is an interactive healthcare operations intelligence and decision-analytics solution developed in Microsoft Power BI. It transforms hospital operational data into a centralized analytical view covering patients, admissions, treatments, facilities, beds, workforce, and geographic performance.
 
 The dashboard is designed to help users move from a high-level understanding of hospital operations to detailed operational analysis, identify meaningful patterns, compare departments and locations, and translate findings into management-oriented insights and recommendations.
-
-🔗 Live Dashboard
-Hospital_Management_Dashboard View Live Power BI Dashboard →
 
 🎯 Project Objectives
 The primary objective of the project is to develop a centralized healthcare operations intelligence dashboard that converts hospital operational data into meaningful analytical information.
@@ -26,25 +23,7 @@ Developing centralized KPIs and analytical measures using DAX.
 Enabling interactive filtering and drill-down analysis.
 Identifying operational patterns and areas requiring attention.
 Translating analytical findings into management-oriented recommendations.
-🗂️ Data & Data Model
-The project uses a healthcare operations dataset containing information related to patients, admissions, treatments, beds, staff, and facilities.
 
-Data_Model The data model follows a Star Schema, with dimension tables providing descriptive context and fact tables containing operational records.
-
-Data Model Tables
-Table	Purpose	Key Fields
-Dim_Patient	Patient demographics, geography & registration	patient_id, age, gender, city, registration_date
-Dim_Facility	Facility information & reported capacity	facility_id, facility_name, facility_type, city, total_beds
-Dim_Date	Time-based analysis	date, month, month_number, year
-Fact_Admissions	Admission, discharge & LOS records	admission_id, patient_id, admission_type, admission_date, discharge_date, length_of_stay
-Fact_Treatments	Treatment activity & status	treatment_id, patient_id, treatment_type, treatment_status, department, treatment_date
-Fact_Beds	Bed information & status	bed_id, bed_type, department, facility_id, status
-Fact_Staff	Workforce, shifts & efficiency	staff_id, department, role, shifts_assigned, shifts_worked, staff_efficiency
-_Measures	Centralized DAX calculations	DAX measures
-🔗 Table Relationships
-The model connects Patient information with admission and treatment activity, while Department supports analysis across admissions, treatments, beds, and staff. Facility connects facility, city, and capacity analysis, and the Date dimension provides consistent time-based analysis across relevant activities.
-
-This structure allows different operational areas to be analyzed independently while maintaining consistent filtering and analytical context across the dashboard.
 
 🧹 Data Preparation
 Python-based data preparation and analysis were used as part of the project workflow.
@@ -198,23 +177,29 @@ Bed Utilization (63.9% occupancy, capacity available for additional demand)	Opti
 Patient Stay (average length of stay 7.58 days)	Improve Patient Flow (monitor high-workload/longer-stay departments, strengthen discharge planning)
 Workforce Performance (84.34% staff efficiency)	Balance Staff Workload (use efficiency and workload data to refine shift allocation)
 Treatment Completion (75.1% completion rate)	Improve Treatment Completion (track pending/cancelled treatments by department and type)
+
 Management Action Plan
 A closing Management Action Plan band condenses these into three action areas:
 
 Capacity: Align bed utilization with admission demand.
 Workforce: Review efficiency and workload for shift planning.
 Treatment: Monitor pending/cancelled treatments and prioritize low-completion areas.
+
 🛠️ Technology Stack
 Technology / Tool	Purpose
-Microsoft Power BI	Dashboard development, data modeling and interactive visualization
-DAX	KPI calculations, analytical measures and business logic
-Python	Data preparation and analysis
-Pandas	Data manipulation and preparation
-NumPy	Numerical processing
-Jupyter Notebook	Data exploration and preparation
-Git	Version control
-GitHub	Repository management, collaboration and documentation
+Microsoft Power BI :-	Dashboard development, data modeling and interactive visualization
+DAX	 :- KPI calculations, analytical measures and business logic
+Python	:- Data preparation and analysis
+Pandas :-	Data manipulation and preparation
+NumPy	:- Numerical processing
+Jupyter Notebook	:- Data exploration and preparation
+Git :-	Version control
+GitHub :-	Repository management, collaboration and documentation
+
+
 ✅ Project Development & Milestones
+
+
 ✅ Milestone 1 - Healthcare Data Integration & Operational Analytics
 Weeks 1-2 · Completed
 
@@ -222,6 +207,7 @@ Healthcare operational datasets collected and preprocessed.
 Key healthcare performance indicators defined.
 Analytical foundation established.
 Integrated datasets prepared for downstream analysis.
+
 ✅ Milestone 2 - Patient Flow & Service Demand Intelligence
 Weeks 3-4 · Completed
 
@@ -230,6 +216,8 @@ Admission and discharge activity analyzed.
 Treatment demand analyzed.
 Departmental workload examined.
 Operational bottlenecks and high-demand service areas identified.
+
+
 ✅ Milestone 3 - Resource Utilization & Capacity Intelligence
 Weeks 5-6 · Completed
 
@@ -239,6 +227,8 @@ Operational capacity monitored.
 Resource KPI dashboards implemented.
 Performance scorecards developed.
 Operational capacity intelligence generated.
+
+
 ✅ Milestone 4 - Geographic Healthcare Intelligence & Executive Dashboard
 Weeks 7-8 · Completed
 
@@ -250,6 +240,7 @@ Complete healthcare operations intelligence platform deployed.
 The project documentation defines these four milestones across the complete eight-week development timeline.
 
 📁 Repository Structure
+
 medical-operations-dashboard-team-a-batch-2/
 ├── data/                                    # Datasets (monthly_admissions.csv, etc.)
 ├── notebooks/                               # Exploratory Data Analysis (Module 1)
@@ -260,6 +251,8 @@ medical-operations-dashboard-team-a-batch-2/
 ├── LICENSE                                   # MIT License
 ├── README.md
 └── Unit_Test_Plan_v0.1 (1).xlsx
+
+
 🔍 Data Quality & Limitations
 The dashboard is an operational analytics and decision-support solution based on the available project dataset.
 
@@ -269,6 +262,7 @@ Reported facility and bed capacity should not automatically be interpreted as re
 Cross-functional comparisons depend on the relationships and analytical logic established in the Power BI data model.
 The dashboard currently covers 8 cities represented in the dataset.
 The dashboard provides analytical evidence and operational indicators; it is not intended to replace clinical judgment, hospital policies, or validated real-time operational systems.
+
 🚀 Future Enhancements
 🔄 Automated Data Refresh
 Connect the dashboard to live or scheduled healthcare data sources to reduce manual data preparation.
@@ -281,6 +275,7 @@ Bed occupancy forecasting
 Treatment demand forecasting
 Workforce requirement planning
 Patient length-of-stay prediction
+
 🛏️ Advanced Capacity Intelligence
 Real-time bed availability
 Department-level capacity thresholds
@@ -288,16 +283,19 @@ Bed-type utilization
 Maintenance availability
 Capacity forecasting
 Demand-versus-capacity alerts
+
 👨‍⚕️ Workforce Planning
 Shift-demand forecasting
 Staffing requirement estimation
 Absence and attendance analysis
 Workload-to-staff ratios
 Workforce capacity alerts
+
 🌍 Expanded Geographic Intelligence
 Additional geographic indicators
 Service accessibility analysis
 Location-level benchmarking
+
 🚨 Operational Alerts
 Potential threshold-based alerts for:
 
@@ -308,17 +306,20 @@ High pending-treatment volumes
 Staffing gaps
 Capacity constraints
 🔐 Enterprise Deployment
+
 Potential future deployment could include:
 
 Role-based access
 Secure data pipelines
 Centralized governance
 Hospital information-system integration
+
 👥 Team & Contributions
 Team Member	Contribution
-Harshada	Project coordination, dashboard and report integration, KPI and visual development
-Khushi	Data modeling, DAX measure development, analytical interpretation, and Git/GitHub workflow management
-Shambhavi	Insights and recommendations, presentation support, and project documentation
+Harshada	:- Project coordination, dashboard and report integration, KPI and visual development
+Khushi	:- Data modeling, DAX measure development, analytical interpretation, and Git/GitHub workflow management
+Shambhavi	:- Insights and recommendations, presentation support, and project documentation
+
 🏁 Project Completion/Outcome
 The Hospital Management Dashboard provides an integrated view of key hospital operations through a structured and interactive analytical solution.
 
