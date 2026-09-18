@@ -335,5 +335,5 @@ Power BI · DAX · Python · Pandas · NumPy · Jupyter Notebook · Git · GitHu
 
 🔗 Live Dashboard
 
-View Live Power BI Dashboard →
+View Live Power BI Dashboard → https://app.powerbi.com/view?r=eyJrIjoiZjNkM2M4MmItMjc0ZC00OTEyLWJhZDgtOTdlMDI5ODgzMTUyIiwidCI6IjNjYmNmZWY2LWUxZGEtNDEyNy04Nzg0LTAyZmQ1ZmJkMWZlNCJ9&pageName=ee3c1ea0d0b6e6b65902
 
